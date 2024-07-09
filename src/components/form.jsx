@@ -26,12 +26,7 @@ export default function Form() {
     navigate("/");
   };
 
-  const validateDate = (dateString) => {
-    // Parse the date string into a Date object
-    const parsedDate = parse(dateString, "yyyy-MM-dd", new Date());
-    // Check if the parsed value is a valid date
-    return isDate(parsedDate);
-  };
+
 
   const handleChange = (e) => {
     e.preventDefault();

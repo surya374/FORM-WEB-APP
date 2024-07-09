@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import "./App.css";
 import { ToastContainer, toast } from "react-toastify";
-import DateInput from "./date";
 
 export default function Edit() {
   const { id } = useParams();

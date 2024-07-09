@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "./list.css";
-import DateInput from "./date";
 
 export default function View() {
   const { id } = useParams();
