@@ -4,7 +4,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import moment from "moment";
 import { isDate, parse } from "date-fns";
 
 export default function Form() {
@@ -24,13 +23,6 @@ export default function Form() {
   const navigate = useNavigate();
   const clickToBackHandler = () => {
     navigate("/");
-  };
-
-  const validateDate = (dateString) => {
-    // Parse the date string into a Date object
-    const parsedDate = parse(dateString, "yyyy-MM-dd", new Date());
-    // Check if the parsed value is a valid date
-    return isDate(parsedDate);
   };
 
   const handleChange = (e) => {
